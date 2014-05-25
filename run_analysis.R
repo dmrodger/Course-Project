@@ -1,8 +1,10 @@
 
 library(plyr)
+library(reshape)
+library(reshape2)
 
 #merges training and test sets
-setwd("C:/Users/Dylan/Desktop/Coursera R/Tidy Data Project")
+setwd("C:/Users/Dylan/course-project")
 
 # read and merge files to create dataset
 subject.train <- read.table("./train/subject_train.txt")
@@ -10,10 +12,10 @@ x.train <- read.table("./train/X_train.txt")
 y.train <- read.table("./train/Y_train.txt")
 train <- cbind(subject.train, y.train, x.train)
 
-subject.test <- read.table("./test/subject.test.txt")
+subject.test <- read.table("./test/subject_test.txt")
 x.test <- read.table("./test/X_test.txt")
 y.test <- read.table("./test/Y_test.txt")
-test <- cbind(subject.atest, y.test, x.test)
+test <- cbind(subject.test, y.test, x.test)
 
 dataset <- rbind(train, test)
 
