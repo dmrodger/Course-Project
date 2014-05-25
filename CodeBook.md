@@ -36,3 +36,26 @@ This replaces the 1-6 numbers with the actual activites performed.
 6. Create subgroups and calculate the mean of all the variables for each subject and each activity
 Utilize the reshape and reshape2 packages to aggregate the mean across each subject and activity.
 This is our final tidy dataset.
+
+
+Variable names: Where there is an XYZ, that denotes 3 separate variables for each dimension measured
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+For each of thes, there is a mean and standard deviation.
